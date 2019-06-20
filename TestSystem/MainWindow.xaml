@@ -1,0 +1,119 @@
+﻿<Window x:Class="TestSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestSystem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Menu IsMainMenu="True" Grid.ColumnSpan="2">
+            <MenuItem Header="File">
+                <MenuItem Command="Open"></MenuItem>
+                <MenuItem Command="Save"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2" Background="BlanchedAlmond">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <CheckBox Name="markCheckBox" Content="Mark" VerticalAlignment="Center" FontSize="14"></CheckBox>
+            <TextBlock Grid.Column="1" Text="Question 5 of 5 (Exam A Q5)" FontSize="14" VerticalAlignment="Center" Padding="30, 0, 0, 0"></TextBlock>
+            <Label Grid.Column="2" Content="Timer"></Label>
+        </Grid>
+        <TextBlock Grid.Row="2" Name="questionBlock" Text="Some questtion" ></TextBlock>
+        <StackPanel Grid.Column="2" Grid.Row="2" Background="BurlyWood">
+            <Button Content="1 Question"></Button>
+            <Button Content="2 Question"></Button>
+        </StackPanel>
+        <Grid Grid.Row="3" Grid.ColumnSpan="2" Background="Purple">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Previous" HorizontalAlignment="Right" Width="80"></Button>
+            <Button Grid.Column="1" Content="Next" HorizontalAlignment="Left" Width="80"></Button>
+            <Expander Grid.Column="2" Header="Review" VerticalAlignment="Center" HorizontalAlignment="Right" ExpandDirection="Up">
+                <DockPanel>
+                    <Button BorderBrush="Aqua" Content="some"></Button>
+                </DockPanel>
+            </Expander>
+            <CheckBox Grid.Column="3" Content="Show answer" VerticalAlignment="Center"></CheckBox>
+            <CheckBox Grid.Column="4" Content="Show List" VerticalAlignment="Center"></CheckBox>
+        </Grid>
+        <Grid Grid.Row="4" Grid.ColumnSpan="2" Background="Aqua">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Save Sesion" HorizontalAlignment="Right" ></Button>
+            <Button Grid.Column="1" Content="End exam" ></Button>
+        </Grid>
+    </Grid>-->
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" IsMainMenu="True">
+            <MenuItem Header="File">
+                <MenuItem Command="Open"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <Grid DockPanel.Dock="Top" Background="Olive">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <CheckBox Name="markCheckBox" Content="Mark" VerticalAlignment="Center" FontSize="14"></CheckBox>
+            <TextBlock Grid.Column="1" Text="Question 5 of 5 (Exam A Q5)" FontSize="14" VerticalAlignment="Center" Padding="30, 0, 0, 0"></TextBlock>
+            <Label Grid.Column="2" Content="Timer" VerticalAlignment="Center"></Label>
+        </Grid>
+        <Grid DockPanel.Dock="Bottom" Background="Aqua">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="Save Sesion" HorizontalAlignment="Right" Width="150" Margin="10"></Button>
+            <Button Grid.Column="1" Content="End Exam" Width="150" Margin="10"></Button>
+        </Grid>
+        <Grid DockPanel.Dock="Bottom" Background="Bisque">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Previous" Width="150" Margin="10, 0, 10, 0"></Button>
+                <Button Content="Next" Width="150"></Button>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <Button>
+                    <Button.Content>
+                        <Expander Header="Review" AllowDrop="True" ExpandDirection="Up" VerticalAlignment="Center"></Expander>
+                    </Button.Content>
+                </Button>
+                <CheckBox Content="Show answer"  VerticalAlignment="Center" Margin="10, 0, 10 ,0"></CheckBox>
+                <CheckBox Content="Show List" VerticalAlignment="Center" Margin="0, 0, 10, 0"></CheckBox>
+            </StackPanel>
+        </Grid>
+        <StackPanel DockPanel.Dock="Right" Width="200" Name="questionPanel">
+            
+        </StackPanel>
+        <StackPanel Background="RosyBrown" Name="mainWindow">
+            
+        </StackPanel>
+    </DockPanel>
+</Window>
