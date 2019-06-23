@@ -13,3 +13,5 @@ X:\ProjectsC#\TestSystem\TestSystem\obj\Debug\TestSystem.csproj.GenerateResource
 X:\ProjectsC#\TestSystem\TestSystem\obj\Debug\TestSystem.csproj.CoreCompileInputs.cache
 X:\ProjectsC#\TestSystem\TestSystem\obj\Debug\TestSystem.exe
 X:\ProjectsC#\TestSystem\TestSystem\obj\Debug\TestSystem.pdb
+X:\ProjectsC#\TestSystem\TestSystem\obj\Debug\EditWindow.g.cs
+X:\ProjectsC#\TestSystem\TestSystem\obj\Debug\EditWindow.baml

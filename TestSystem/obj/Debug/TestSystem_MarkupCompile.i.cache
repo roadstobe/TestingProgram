@@ -1,7 +1,7 @@
 ﻿TestSystem
 
 
-winexe
+exe
 C#
 .cs
 X:\ProjectsC#\TestSystem\TestSystem\obj\Debug\
@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 X:\ProjectsC#\TestSystem\TestSystem\App.xaml
-11151548125
+2651524704
 
-8-119868574
-13-1505183044
-MainWindow.xaml;
+12387156594
+14-1290796308
+EditWindow.xaml;MainWindow.xaml;
 
 False
 

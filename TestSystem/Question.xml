@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Test>
+  <questions>
+    <TypeButton>RadioButton</TypeButton>
+    <condition>question0</condition>
+    <question>
+      <title>answer1ForQuestion 0</title>
+      <isTrue>false</isTrue>
+    </question>
+    <question>
+      <title>answer2 ForQuestion 0</title>
+      <isTrue>true</isTrue>
+    </question>
+    <question>
+      <title>answer3 ForQuestion 0</title>
+      <isTrue>true</isTrue>
+    </question>
+  </questions>
+  <questions>
+    <TypeButton>CheckBox</TypeButton>
+    <condition>question1</condition>
+    <question>
+      <title>answer1 for question 1</title>
+      <isTrue>false</isTrue>
+    </question>
+    <question>
+      <title>answer2</title>
+      <isTrue>true</isTrue>
+    </question>
+  </questions>
+
+</Test>

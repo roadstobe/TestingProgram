@@ -15,29 +15,29 @@ using System.Windows.Shapes;
 
 namespace TestSystem
 {
-    class Question:TypeQuestion
+    class CheckQuestion:TypeQuestion
     {
+       
         public static int Id { get; private set; }
         int id;
-        public RadioButton Choose { get; set; }
-        public Question(){}
-        public Question(string content, bool correct):base(content, correct)
+        public CheckBox Choose { get; set; }
+        public CheckQuestion(){}
+        public CheckQuestion(string content, bool isCorrect):base(content, isCorrect)
         {
             id = Id;
             Id++;
-            IsCorrect = correct;
-            Choose = new RadioButton();
+            IsCorrect = isCorrect;
+            Choose = new CheckBox();
+            Choose.Content = content;
+            Choose.Name = $"checkBox{id}";
             Place.Content = Choose;
             Place.HorizontalAlignment = HorizontalAlignment.Left;
-            Choose.GroupName = "g";
-            Choose.Content = content;
-            Choose.Name = $"radioButton{id}";
-
         }
 
         public override string ToString()
         {
             return $"{Choose.Content}";
         }
+
     }
 }

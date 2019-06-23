@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<questions>
+  <question>
+    <item>
+      <isChecked>True</isChecked>
+    </item>
+    <item>
+      <isChecked>False</isChecked>
+    </item>
+    <item>
+      <isChecked>False</isChecked>
+    </item>
+  </question>
+  <question>
+    <item>
+      <isChecked>True</isChecked>
+    </item>
+    <item>
+      <isChecked>False</isChecked>
+    </item>
+  </question>
+</questions>
